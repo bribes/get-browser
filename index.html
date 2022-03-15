@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser</title>
+</head>
+<body>
+  <h1>window.browser</h1>
+  <p id="browserText"></p>
+  <script src="https://cdn.jsdelivr.net/gh/bribes/getbrowser@latest/getbrowser.min.js"></script>
+  <script>
+    browserText.innerHTML = JSON.stringify(window.browser);
+  </script>
+</body>
+</html>
