@@ -23,28 +23,28 @@ try {
   if (/trident/i.test(M[1])) {
     tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
     return {
-      name: 'ie',
+      browser: 'ie',
       version: (tem[1] || '')
     };
   }
   if (M[1] === 'Chrome') {
     tem = ua.match(/\bEdg\/(\d+)/) // matches user-agent Ex. Edg/99.0.1150.39
     if (tem != null) return {
-      name: 'edge',
+      browser: 'edge',
       version: tem[1]
     };
     tem = ua.match(/\bOPR\/(\d+)/)
     if (tem != null) return {
-      name: 'opera',
+      browser: 'opera',
       version: tem[1]
     };
     tem = ua.match(/\bCCleaner\/(\d+)/)
     if (tem != null) return {
-        name: 'ccleaner',
+      browser: 'ccleaner',
       version: tem[1]
     };
     if (!Object.fromEntries(request.headers)['sec-ch-ua']) return {
-      name: 'brave',
+      browser: 'brave',
       version: M[2]
     };
   }
@@ -53,7 +53,7 @@ try {
     M.splice(1, 1, tem[1]);
   }
   return {
-    name: M[0].toLowerCase(),
+    browser: M[0].toLowerCase(),
     version: M[1]
   };
 } catch {}
