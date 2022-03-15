@@ -43,7 +43,7 @@ try {
         name: 'ccleaner',
       version: tem[1]
     };
-if (!Object.fromEntries(request.headers)['sec-ch-ua']) return {
+    if (!Object.fromEntries(request.headers)['sec-ch-ua']) return {
       name: 'brave',
       version: M[2]
     };
