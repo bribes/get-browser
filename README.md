@@ -3,7 +3,7 @@ get the browser name and version in JSON format. window.browser Ex. {"name": "br
 
 Add this to your site
 ```html
-<script src="https://cdn.jsdelivr.net/gh/bribes/getbrowser@latest/getbrowser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bribes/get-browser@latest/getbrowser.min.js"></script>
 ```
 
 Usage Ex.
