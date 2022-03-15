@@ -16,5 +16,22 @@ I set up a cloudflare worker for this if someone wants to use this as an API.
 
 https://get-browser.faav.tk/
 
+### Responses
+
+200
+```json
+{"browser":"brave","version":"100"}
+```
+
+No User Agent 404
+```json
+{"error":"no_user_agent","message":"No User Agent Found!","code":404}
+```
+
+No Browser 404
+```json
+{"error":"no_browser","message":"No Browser Detected!","code":404}
+```
+
 You can set this up yourself, heres the code:
 [Source Code](https://raw.githubusercontent.com/bribes/get-browser/main/cf-worker.js)
