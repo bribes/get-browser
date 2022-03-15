@@ -1,5 +1,5 @@
 # Get Browser
-This fixes [the browser version 100 problem](https://hacks.mozilla.org/2022/02/version-100-in-chrome-and-firefox/). Get the browser name and version in JSON format. window.browser Ex. {"name": "brave", "version": "100"}
+This fixes the [browser version 100 problem](https://hacks.mozilla.org/2022/02/version-100-in-chrome-and-firefox/). Get the browser name and version in JSON format. window.browser Ex. {"name": "brave", "version": "100"}
 
 Add this to your site
 ```html
