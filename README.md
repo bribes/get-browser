@@ -12,7 +12,7 @@ console.log(window.browser); // Ex. {"browser": "brave", "version": "100"}
 ```
 
 ## Cloudflare Worker API
-I set up a cloudflare worker for this if someone wants to use this as an API.
+I set up a cloudflare worker for this if someone wants to use this as an API. If using server side put user agent taken from user as user agent sending to API.
 
 https://get-browser.faav.tk/
 
