@@ -1,5 +1,5 @@
 # Get Browser
-Get the browser name and version in JSON format. window.browser Ex. {"name": "brave", "version": "100"}
+This fixes the web browser 100 issue. Get the browser name and version in JSON format. window.browser Ex. {"name": "brave", "version": "100"}
 
 Add this to your site
 ```html
