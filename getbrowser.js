@@ -1,6 +1,6 @@
 window.browser = function () {
   var ua = navigator.userAgent,
-    tem, M = ua.match(/(opera|chrome|safari|firefox|msie|ccleaner|trident(?=\/))\/?\s*(\d+)/i) || [];
+    tem, M = ua.match(/(opera|chrome|duckduckgo|alohabrowser|safari|firefox|msie|ccleaner|trident(?=\/))\/?\s*(\d+)/i) || [];
   if (/trident/i.test(M[1])) {
     tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
     return {
@@ -28,6 +28,18 @@ window.browser = function () {
     if (isBrave === true) return {
       browser: 'brave',
       version: M[2]
+    };
+  }
+  if (M[1] === 'Safari') {
+    tem = ua.match(/\bDuckDuckGo\/(\d+)/)
+    if (tem != null) return {
+      browser: 'duckduckgo',
+      version: tem[1]
+    };
+    tem = ua.match(/\bAlohaBrowser\/(\d+)/)
+    if (tem != null) return {
+      browser: 'aloha',
+      version: tem[1]
     };
   }
   M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
