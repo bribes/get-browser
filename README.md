@@ -3,7 +3,7 @@ This fixes the [browser version 100 problem](https://hacks.mozilla.org/2022/02/v
 
 Add this to your site
 ```html
-<script src="https://github.com/bribes/get-browser/raw/main/getbrowser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bribes/get-browser@latest/js/getbrowser.min.js"></script>
 ```
 
 Usage Ex.
@@ -34,4 +34,4 @@ No Browser 404
 ```
 
 You can set this up yourself, heres the code:
-[Source Code](https://raw.githubusercontent.com/bribes/get-browser/main/cf-worker.js)
+[Source Code](https://raw.githubusercontent.com/bribes/get-browser/main/worker/cf-worker.js)
